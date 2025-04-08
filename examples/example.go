@@ -23,7 +23,7 @@ func main() {
 	}
 
 	//Error test
-	_, err = hexDecConv.HexToDec("VB") // V and B are not hexdecimal numbers
+	_, err = hexDecConv.HexToDec("VB") // V and B are not hexadecimal numbers
 	if err != nil {
 		fmt.Println("Error: ", err) // Error: Wrong input
 	}
