@@ -1,4 +1,4 @@
-package hexdecimalconverter
+package hexDecConv
 
 import (
 	"fmt"
@@ -8,7 +8,7 @@ import (
 	"unicode"
 )
 
-func hexToDecimal(hexString string) (string, error) {
+func hexToDec(hexString string) (string, error) {
 	var hexMap map[rune]int = map[rune]int{'a': 10, 'b': 11, 'c': 12, 'd': 13, 'e': 14, 'f': 15}
 	hexFields := strings.Fields(hexString)
 	var decimal []string
@@ -31,7 +31,7 @@ func hexToDecimal(hexString string) (string, error) {
 	return strings.Join(decimal, " "), nil
 }
 
-func decimalToHex(decString string) (string, error) {
+func decToHex(decString string) (string, error) {
 	var hexMap map[int]string = map[int]string{10: "a", 11: "b", 12: "c", 13: "d", 14: "e", 15: "f"}
 	decFields := strings.Fields(decString)
 	hex := []string{}
