@@ -24,5 +24,5 @@ dec, _ := hexdecimalconverter.HexToDecimal("1A 2F")
 hex, _ := hexdecimalconverter.DecimalToHex("26 47")
 // "1A 2F"
 ```
-```markdown
+
 See full [examples](examples/) in the repo.
