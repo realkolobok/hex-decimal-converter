@@ -18,10 +18,10 @@ go get github.com/realkolobok/hex-decimal-converter
 ```go
 import "github.com/realkolobok/hex-decimal-converter"
 
-dec, _ := hexdecimalconverter.HexToDecimal("1A 2F")
+dec, _ := hexDecConv.hexToDec("1A 2F")
 // "26 47"
 
-hex, _ := hexdecimalconverter.DecimalToHex("26 47")
+hex, _ := hexDecConv.decToHex("26 47")
 // "1A 2F"
 ```
 
